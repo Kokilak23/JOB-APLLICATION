@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Jobs</title></head>
+    <link rel="stylesheet" href="job.css">
+
+    <body>
+        <form id="jobApplicationForm" enctype="multipart/form-data">
+            <h2>Apply for Jobs</h2>
+            
+            <label for="firstName">First Name*</label>
+            <input type="text" id="firstName" name="firstName">
+            <section id="firstNameError" class="error"></section>
+    
+            <label for="lastName">Last Name*</label>
+            <input type="text" id="lastName" name="lastName">
+            <section id="lastNameError" class="error"></section>
+    
+            <label for="email">Email*</label>
+            <input type="text" id="email" name="email">
+            <section id="emailError" class="error"></section>
+    
+            <label for="phone">Phone Number*</label>
+            <input type="text" id="phone" name="phone">
+            <section id="phoneError" class="error"></section>
+    
+            <label for="address">Address*</label>
+            <input type="text" id="address" name="address">
+            <section id="addressError" class="error"></section>
+    
+            <label for="city">City*</label>
+            <input type="text" id="city" name="city">
+            <section id="cityError" class="error"></section>
+    
+            <label for="state">State*</label>
+            <input type="text" id="state" name="state">
+            <section id="stateError" class="error"></section>
+    
+            <label for="zip">Zip Code*</label>
+            <input type="text" id="zip" name="zip">
+            <section id="zipError" class="error"></section>
+    
+            <label for="country">Country*</label>
+            <select id="country" name="country">
+                <option value="">Select a country</option>
+                <option value="US">United States</option>
+                <option value="IN">India</option>
+                <option value="CH">China</option>
+                <option value="SA">South Africa</option>
+                <option value="gh">Iran</option>
+                <option value="gj">Pakistan</option>
+    
+    
+            </select>
+            <section id="countryError" class="error"></div>
+    
+            <label for="educationLevel">Education Level*</label>
+            <select id="educationLevel" name="educationLevel">
+                <option value="">Select an education level</option>
+                <option value="HS">High School</option>
+                <option value="BA">Bachelor's</option>
+                <!-- Add more options as needed -->
+            </select>
+            <div id="educationLevelError" class="error"></div>
+    
+            <label for="educationType">Education Type*</label>
+            <select id="educationType" name="educationType">
+                <option value="">Select an education type</option>
+                <option value="Full-time">Full-time</option>
+                <option value="Part-time">Part-time</option>
+                <!-- Add more options as needed -->
+            </select>
+            <div id="educationTypeError" class="error"></div>
+    
+            <label for="resume">Resume*</label>
+            <input type="file" id="resume" name="resume">
+            <div id="resumeError" class="error"></div>
+    
+            <label for="coverLetter">Cover Letter (optional)</label>
+            <textarea id="coverLetter" name="coverLetter" rows="4"></textarea>
+    
+            <label for="employed">Are you employed?</label>
+            <input type="checkbox" id="employed" name="employed">
+    
+            <div class="employed-section">
+                <label for="currentEmployer">Current Employer Name</label>
+                <input type="text" id="currentEmployer" name="currentEmployer">
+                <label for="yearsOfExperience">Years of Experience</label>
+                <input type="number" id="yearsOfExperience" name="yearsOfExperience">
+            </div>
+    
+            <label for="jobSelect">Jobs you want to apply for*</label>
+            <select id="jobSelect" name="jobSelect" multiple>
+                <option value="job1">Full Stack Web Developer</option>
+                <option value="job2">Data Analyst</option>
+                <option value="job3">Data Scientist</option>
+                <option value="job4">Cloud Engineer</option>
+                <option value="job4">Automation Testing</option>
+                <option value="job5">DevOps</option>
+                <!-- Add more jobs -->
+            </select>
+            <div id="jobSelectError" class="error"></div>
+    
+            <button type="button" onclick="validateForm()">Submit</button>
+        </form>
+        <script src="job.js"></script>
+
+</body></html>
